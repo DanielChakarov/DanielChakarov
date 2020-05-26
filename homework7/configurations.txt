@@ -1,0 +1,2 @@
+number_of_probes   = 12
+number_of_disposal = 6
