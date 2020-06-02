@@ -63,12 +63,7 @@ public class Data {
         String Name = person.get(1); String lName = person.get(2);
         int Age = Integer.parseInt(person.get(3)); String Address = person.get(5);
 
-        if (Name.charAt(0) < 'A' || Name.charAt(0) > 'Z' ||
-                lName.charAt(0) < 'a' || lName.charAt(0) > 'z' ||
-                Address.charAt(0) < 'a' || Address.charAt(0) > 'z' ||
-                Age < 0 || Age > 100) {
-            return false;
-        }
+    
         for (int j = 0; j < lName.length(); j++) {
             if (lName.charAt(j) >= 65 && lName.charAt(j) <= 90 ||
                     lName.charAt(j) >= 97 && lName.charAt(j) <= 122) {
